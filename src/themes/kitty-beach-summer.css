@@ -1,0 +1,18 @@
+/* Original palette: kitty-beach-summer. Code MIT; character artwork excluded, see ARTWORK-NOTICE.md. */
+:root {
+  --g-space: #dff3f1;
+  --g-panel: #fffdf3;
+  --g-raised: #f6ead1;
+  --g-ink: #174655;
+  --g-muted: #4a6c71;
+  --g-line: #99c9c7;
+  --g-blue: #12697f;
+  --g-red: #ba493c;
+  --g-amber: #87580d;
+  --g-green: #397451;
+  --g-sidebar: #175967;
+  --g-accent: #db6649;
+  --season-name: "Beach Summer";
+  --season-art: @artwork(kitty-beach-summer);
+  color-scheme: light;
+}

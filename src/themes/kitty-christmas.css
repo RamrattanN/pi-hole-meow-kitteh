@@ -1,0 +1,18 @@
+/* Original palette: kitty-christmas. Code MIT; character artwork excluded, see ARTWORK-NOTICE.md. */
+:root {
+  --g-space: #f4f0e5;
+  --g-panel: #fffdf6;
+  --g-raised: #f1e6da;
+  --g-ink: #283a31;
+  --g-muted: #59695a;
+  --g-line: #cbbfa7;
+  --g-blue: #28636a;
+  --g-red: #a8273c;
+  --g-amber: #805613;
+  --g-green: #34734f;
+  --g-sidebar: #173e35;
+  --g-accent: #c83149;
+  --season-name: "Christmas Wishes";
+  --season-art: @artwork(kitty-christmas);
+  color-scheme: light;
+}

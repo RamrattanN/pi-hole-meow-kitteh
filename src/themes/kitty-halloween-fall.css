@@ -1,0 +1,18 @@
+/* Original palette: kitty-halloween-fall. Code MIT; character artwork excluded, see ARTWORK-NOTICE.md. */
+:root {
+  --g-space: #211b31;
+  --g-panel: #30263f;
+  --g-raised: #3d314b;
+  --g-ink: #fff1db;
+  --g-muted: #d1c0dc;
+  --g-line: #685574;
+  --g-blue: #aad6df;
+  --g-red: #ffac83;
+  --g-amber: #f4c878;
+  --g-green: #a6d4aa;
+  --g-sidebar: #171421;
+  --g-accent: #ec974c;
+  --season-name: "Halloween Fall";
+  --season-art: @artwork(kitty-halloween-fall);
+  color-scheme: dark;
+}

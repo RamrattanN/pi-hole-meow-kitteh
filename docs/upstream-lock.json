@@ -1,0 +1,13 @@
+{
+  "web_version": "v6.6",
+  "web_commit": "b2a4078446519c58d84f199663ca9326d5d311f0",
+  "files": {
+    "index.lp": "44b7ae17cebd96b43962fb82a14e6e04e2ba0ab48d37bbce0d1642de4759907b",
+    "scripts/lua/header.lp": "2f08ab5feb024a8110c9ab45a35c209c3c46a15f6ba92fcd065a53268b7efc4e",
+    "scripts/lua/header_authenticated.lp": "16d5a0247304daf7686509a3dfa420d36c4d3414bc1b1ebe5f97444137400c6a",
+    "scripts/js/index.js": "73bda58d00cb91153ccd745008c2a187b63fb486c6f76bedf68c64dce44efc3e",
+    "scripts/js/utils.js": "ae3e8bda1e51e75e34cc0b8c4e463b78cc5dcc1c1673bb3eceaa08c80093f1ff",
+    "style/themes/default-dark.css": "2c8885d4c079daac45a060ad2eda805b50256b08acb2c075d39caf38e1162cd9",
+    "style/themes/default-light.css": "01afc19f73486f76ee4bc46431baa5caeb4b52e2a4934cb2957a1698e9f06ef2"
+  }
+}

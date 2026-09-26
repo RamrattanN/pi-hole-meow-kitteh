@@ -1,0 +1,45 @@
+/* Seasonal interface code: MIT. Character artwork: see ARTWORK-NOTICE.md. */
+:is(.page-index, .page-index\.lp) { font-family: "Source Sans Pro", system-ui, sans-serif; }
+:is(.page-index, .page-index\.lp) .content-wrapper {
+  background-image: radial-gradient(circle, var(--g-line) .8px, transparent 1px);
+  background-size: 22px 22px;
+}
+:is(.page-index, .page-index\.lp) .content::before {
+  content: "MEOW KITTEH\A" var(--season-name) "\A A little joy for your home network";
+  display: block; box-sizing: border-box; height: 266px; padding: 46px 34px;
+  white-space: pre-line; font: 600 clamp(17px, 1.8vw, 25px)/2 system-ui, sans-serif;
+  letter-spacing: .035em; color: var(--g-ink);
+  background-color: var(--g-panel); background-image: var(--season-art);
+  background-position: right center; background-size: cover; background-repeat: no-repeat;
+  border: 1px solid var(--g-line); border-radius: 24px;
+  box-shadow: 0 8px 24px #0000000c; margin: 0 0 24px;
+}
+:is(.page-index, .page-index\.lp) .main-sidebar,
+:is(.page-index, .page-index\.lp) .main-header .navbar,
+:is(.page-index, .page-index\.lp) .main-header .logo { background: var(--g-sidebar); color: #fff7ed; }
+:is(.page-index, .page-index\.lp) .main-header .navbar { border-bottom: 3px solid var(--g-accent); }
+:is(.page-index, .page-index\.lp) .sidebar-menu > li.header { background: transparent; color: #e2dce5; letter-spacing: .07em; }
+:is(.page-index, .page-index\.lp) .sidebar-menu > li > a { margin: 4px 10px; border-radius: 12px; color: #fff8ef; }
+:is(.page-index, .page-index\.lp) .sidebar-menu > li.active > a,
+:is(.page-index, .page-index\.lp) .sidebar-menu > li > a:hover { background: #ffffff18; color: #fff; border-left-color: var(--g-accent); }
+:is(.page-index, .page-index\.lp) .small-box { border-radius: 18px; box-shadow: 0 5px 14px #0000000b; }
+:is(.page-index, .page-index\.lp) .small-box p { font-weight: 600; }
+:is(.page-index, .page-index\.lp) .small-box h3 { font-family: system-ui,sans-serif; font-weight: 700; }
+:is(.page-index, .page-index\.lp) .small-box .icon { font-size: 54px; right: 14px; top: 14px; opacity: .12; }
+:is(.page-index, .page-index\.lp) .small-box > .small-box-footer { border-radius: 0 0 16px 16px; padding: 11px 14px; }
+:is(.page-index, .page-index\.lp) .small-box > .small-box-footer:hover { box-shadow: inset 0 -3px var(--card-accent); }
+:is(.page-index, .page-index\.lp) .box { border-radius: 18px; border-top: 3px solid var(--g-line); }
+:is(.page-index, .page-index\.lp) .box-header { padding: 17px 19px; }
+:is(.page-index, .page-index\.lp) .box-title { font-weight: 600; }
+:is(.page-index, .page-index\.lp) .btn-default { border-radius: 10px; border-bottom: 2px solid var(--g-accent); }
+:is(.page-index, .page-index\.lp) .btn-default:hover { outline: 1px solid var(--g-accent); }
+@media(max-width:1100px) {
+  :is(.page-index, .page-index\.lp) .content::before { font-size: 17px; padding: 28px; height: 310px; background-size: auto 200px; background-position: right bottom; background-color: var(--g-panel); }
+}
+@media(max-width:767px) {
+  :is(.page-index, .page-index\.lp) .content::before { height: 330px; padding: 18px; font-size: 15px; line-height: 1.8; border-radius: 16px; background-size: auto 210px; }
+  :is(.page-index, .page-index\.lp) .small-box .icon { display: block; }
+}
+@media(forced-colors:active) {
+  :is(.page-index, .page-index\.lp) .content::before { background: Canvas; color: CanvasText; border: 1px solid CanvasText; }
+}

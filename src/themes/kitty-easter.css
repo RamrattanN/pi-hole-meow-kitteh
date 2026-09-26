@@ -1,0 +1,18 @@
+/* Original palette: kitty-easter. Code MIT; character artwork excluded, see ARTWORK-NOTICE.md. */
+:root {
+  --g-space: #f0eafa;
+  --g-panel: #fffaff;
+  --g-raised: #f0e3f2;
+  --g-ink: #443452;
+  --g-muted: #726078;
+  --g-line: #cbb7d2;
+  --g-blue: #5a6094;
+  --g-red: #a63e72;
+  --g-amber: #87611c;
+  --g-green: #467351;
+  --g-sidebar: #493858;
+  --g-accent: #b44d83;
+  --season-name: "Easter Garden";
+  --season-art: @artwork(kitty-easter);
+  color-scheme: light;
+}

@@ -1,0 +1,145 @@
+/* Meow Kitteh. Interface code MIT; character artwork excluded: ARTWORK-NOTICE.md */
+@import url("default-light.css");
+/* Original palette: kitty-beach-summer. Code MIT; character artwork excluded, see ARTWORK-NOTICE.md. */
+:root {
+  --g-space: #dff3f1;
+  --g-panel: #fffdf3;
+  --g-raised: #f6ead1;
+  --g-ink: #174655;
+  --g-muted: #4a6c71;
+  --g-line: #99c9c7;
+  --g-blue: #12697f;
+  --g-red: #ba493c;
+  --g-amber: #87580d;
+  --g-green: #397451;
+  --g-sidebar: #175967;
+  --g-accent: #db6649;
+  --season-name: "Beach Summer";
+  --season-art: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%20300%22%3E%3Crect%20width%3D%221200%22%20height%3D%22300%22%20fill%3D%22%23bce4e7%22%2F%3E%3Ccircle%20cx%3D%221118%22%20cy%3D%2260%22%20r%3D%2235%22%20fill%3D%22%23ffe398%22%2F%3E%3Cpath%20d%3D%22M0%20234Q160%20210%20320%20234T640%20234T960%20234T1280%20234V300H0%22%20fill%3D%22%2362b8bc%22%2F%3E%3Cpath%20d%3D%22M0%20272Q250%20233%20505%20269T1200%20253V300H0%22%20fill%3D%22%23f5deb0%22%2F%3E%0A%3Cpath%20d%3D%22m681%20265%2011-175%22%20stroke%3D%22%2378624e%22%20stroke-width%3D%227%22%2F%3E%3Cpath%20d%3D%22M586%20113Q686-31%20790%20113Z%22%20fill%3D%22%23e66c60%22%20stroke%3D%22%2378504b%22%20stroke-width%3D%223%22%2F%3E%3Cpath%20d%3D%22M636%20113Q684-27%20741%20113Z%22%20fill%3D%22%23fff2d6%22%2F%3E%0A%3Cpath%20d%3D%22M1092%20274q-9-104%2039-140%22%20fill%3D%22none%22%20stroke%3D%22%238b7851%22%20stroke-width%3D%2212%22%2F%3E%3Cg%20fill%3D%22%233e8f76%22%3E%3Cpath%20d%3D%22M1129%20140q-75-69-116%206%2053-23%20116-6M1129%20140q41-77%2072-27-38-5-72%2027M1129%20140q-47-86-66-21%2035-15%2066%2021M1129%20140q64-8%2061%2044-29-35-61-44%22%2F%3E%3C%2Fg%3E%0A%3Ccircle%20cx%3D%22773%22%20cy%3D%22263%22%20r%3D%2228%22%20fill%3D%22%23fff8e5%22%20stroke%3D%22%238c7761%22%20stroke-width%3D%222%22%2F%3E%3Cpath%20d%3D%22M745%20263h56M773%20235q-25%2029%200%2056%22%20fill%3D%22none%22%20stroke%3D%22%23e77564%22%20stroke-width%3D%2212%22%2F%3E%3Cg%20transform%3D%22translate%28857%2084%29%22%3E%3Cpath%20d%3D%22M28%2063%2025%2013Q42%2011%2062%2038Q105%2024%20143%2038Q164%2012%20181%2014L178%2066Q197%2085%20191%20112Q184%20156%20105%20160Q26%20158%2017%20117Q8%2087%2028%2063Z%22%20fill%3D%22%23fffdfa%22%20stroke%3D%22%2334303a%22%20stroke-width%3D%224%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3Cg%20fill%3D%22%2334303a%22%3E%3Cellipse%20cx%3D%2266%22%20cy%3D%22100%22%20rx%3D%225%22%20ry%3D%228%22%2F%3E%3Cellipse%20cx%3D%22142%22%20cy%3D%22100%22%20rx%3D%225%22%20ry%3D%228%22%2F%3E%3C%2Fg%3E%3Cellipse%20cx%3D%22104%22%20cy%3D%22117%22%20rx%3D%228%22%20ry%3D%225%22%20fill%3D%22%23efc43f%22%20stroke%3D%22%2334303a%22%20stroke-width%3D%222%22%2F%3E%0A%3Cg%20stroke%3D%22%2334303a%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M28%2091%200%2084M26%20104H-3M30%20118%202%20126M179%2091l29-8M183%20104h28M177%20118l28%209%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate%28151%2048%29%20rotate%2812%29%22%3E%3Cpath%20d%3D%22M0%200Q-43-31-41%201Q-39%2029%200%2010Q40%2036%2042%206Q44-22%200%200%22%20fill%3D%22%23e76b60%22%20stroke%3D%22%2334303a%22%20stroke-width%3D%223%22%2F%3E%3Cellipse%20cx%3D%220%22%20cy%3D%225%22%20rx%3D%2211%22%20ry%3D%2213%22%20fill%3D%22%23e76b60%22%20stroke%3D%22%2334303a%22%20stroke-width%3D%223%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M31%20164q78%2038%20146-1l-6%2031H37z%22%20fill%3D%22%23f9d68b%22%20stroke%3D%22%2334303a%22%20stroke-width%3D%223%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  color-scheme: light;
+}
+/* Meow Kitteh — original dashboard layer. SPDX-License-Identifier: MIT */
+body.page-index, body.page-index\.lp {
+  font-family: "Source Sans Pro", system-ui, sans-serif;
+  --datatable-bgcolor: var(--g-raised);
+  --overlay-bgcolor: var(--g-panel);
+  --allowed-color: var(--g-green);
+  --blocked-color: var(--g-red);
+  --cached-color: var(--g-blue);
+  --other-color: var(--g-muted);
+}
+:is(.page-index, .page-index\.lp) .content-wrapper {
+  background-color: var(--g-space);
+  background-image: radial-gradient(circle at 15% 30%, #8facc52b 0 1px, transparent 1.5px), radial-gradient(circle at 70% 65%, #8facc526 0 1px, transparent 1.5px);
+  background-size: 143px 173px, 227px 211px;
+  color: var(--g-ink);
+}
+:is(.page-index, .page-index\.lp) .content { padding: 28px; }
+:is(.page-index, .page-index\.lp) .content::before {
+  content: "GALACTIC NETWORK DEFENSE / TELEMETRY";
+  display: block; margin: 0 0 22px; padding: 0 0 14px;
+  border-bottom: 1px solid var(--g-line);
+  color: var(--g-muted); font: 600 12px/1.5 ui-monospace, monospace;
+  letter-spacing: .14em;
+}
+:is(.page-index, .page-index\.lp) .main-header .navbar,
+:is(.page-index, .page-index\.lp) .main-header .logo,
+:is(.page-index, .page-index\.lp) .main-sidebar {
+  background: #111c27; color: #e2eaf0;
+}
+:is(.page-index, .page-index\.lp) .main-header .navbar { border-bottom: 2px solid var(--g-amber); }
+:is(.page-index, .page-index\.lp) .sidebar-menu > li > a { color: #b9c8d3; border-left: 3px solid transparent; }
+:is(.page-index, .page-index\.lp) .sidebar-menu > li.active > a,
+:is(.page-index, .page-index\.lp) .sidebar-menu > li > a:hover { background: #223344; color: #fff; border-left-color: var(--g-amber); }
+:is(.page-index, .page-index\.lp) .sidebar-menu > li.header { background: #111c27; color: #96aabb; letter-spacing: .1em; font-size: 11px; }
+:is(.page-index, .page-index\.lp) .user-panel { color: #e2eaf0; }
+:is(.page-index, .page-index\.lp) .small-box {
+  background: var(--g-panel) !important; color: var(--g-ink) !important;
+  border: 1px solid var(--g-line); border-top: 3px solid var(--card-accent);
+  border-radius: 4px; box-shadow: 0 6px 18px #00000012;
+}
+:is(.page-index, .page-index\.lp) .small-box.bg-aqua { --card-accent: var(--g-blue); }
+:is(.page-index, .page-index\.lp) .small-box.bg-red { --card-accent: var(--g-red); }
+:is(.page-index, .page-index\.lp) .small-box.bg-yellow { --card-accent: var(--g-amber); }
+:is(.page-index, .page-index\.lp) .small-box.bg-green { --card-accent: var(--g-green); }
+:is(.page-index, .page-index\.lp) .small-box > .inner { padding: 18px; }
+:is(.page-index, .page-index\.lp) .small-box p { color: var(--g-muted); font-size: 13px; letter-spacing: .04em; }
+:is(.page-index, .page-index\.lp) .small-box h3 { font: 500 clamp(25px, 2.6vw, 38px)/1.25 ui-monospace, monospace; }
+:is(.page-index, .page-index\.lp) .small-box .icon { color: var(--card-accent); opacity: .16; font-size: 65px; }
+:is(.page-index, .page-index\.lp) .small-box > .small-box-footer { background: var(--g-raised); color: var(--g-ink); padding: 9px 12px; text-align: left; font-size: 12px; }
+:is(.page-index, .page-index\.lp) .box { background: var(--g-panel); color: var(--g-ink); border: 1px solid var(--g-line); border-radius: 4px; box-shadow: 0 6px 18px #00000012; }
+:is(.page-index, .page-index\.lp) .box-header { color: var(--g-ink); padding: 16px; }
+:is(.page-index, .page-index\.lp) .box-header.with-border { border-bottom: 1px solid var(--g-line); }
+:is(.page-index, .page-index\.lp) .box-title { font-size: 16px; font-weight: 600; }
+:is(.page-index, .page-index\.lp) .box-body { padding: 16px; }
+:is(.page-index, .page-index\.lp) .box-footer { background: var(--g-panel); border-color: var(--g-line); }
+:is(.page-index, .page-index\.lp) a { color: var(--g-blue); }
+:is(.page-index, .page-index\.lp) .main-header a { color: #e2eaf0; }
+:is(.page-index, .page-index\.lp) .table > tbody > tr > td,
+:is(.page-index, .page-index\.lp) .table > thead > tr > th { border-color: var(--g-line); }
+:is(.page-index, .page-index\.lp) .table-striped > tbody > tr:nth-of-type(odd),
+:is(.page-index, .page-index\.lp) .table > tbody > tr.odd { background: var(--g-raised); }
+:is(.page-index, .page-index\.lp) .table-hover > tbody > tr:hover { background: var(--g-space); }
+:is(.page-index, .page-index\.lp) .btn-default,
+:is(.page-index, .page-index\.lp) .form-control { background: var(--g-raised); color: var(--g-ink); border-color: var(--g-line); }
+:is(.page-index, .page-index\.lp) .main-footer { background: var(--g-panel); color: var(--g-muted); border-color: var(--g-line); }
+:is(.page-index, .page-index\.lp) .graphs-grid { background-color: var(--g-line); }
+:is(.page-index, .page-index\.lp) .graphs-ticks { color: var(--g-muted); }
+:is(.page-index, .page-index\.lp) .queries-permitted { background-color: var(--g-green); }
+:is(.page-index, .page-index\.lp) .queries-blocked { background-color: var(--g-red); }
+:is(.page-index, .page-index\.lp) .queries-cached { background-color: var(--g-blue); }
+:is(.page-index, .page-index\.lp) .queries-other { background-color: var(--g-muted); }
+:is(.page-index, .page-index\.lp) :focus-visible { outline: 3px solid var(--g-amber); outline-offset: 3px; }
+@media (max-width: 767px) {
+  :is(.page-index, .page-index\.lp) .content { padding: 15px; }
+  :is(.page-index, .page-index\.lp) .small-box h3 { font-size: 28px; }
+  :is(.page-index, .page-index\.lp) .table-responsive { border: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(.page-index, .page-index\.lp) *, :is(.page-index, .page-index\.lp) *::before { animation: none !important; transition: none !important; }
+}
+/* Seasonal interface code: MIT. Character artwork: see ARTWORK-NOTICE.md. */
+:is(.page-index, .page-index\.lp) { font-family: "Source Sans Pro", system-ui, sans-serif; }
+:is(.page-index, .page-index\.lp) .content-wrapper {
+  background-image: radial-gradient(circle, var(--g-line) .8px, transparent 1px);
+  background-size: 22px 22px;
+}
+:is(.page-index, .page-index\.lp) .content::before {
+  content: "MEOW KITTEH\A" var(--season-name) "\A A little joy for your home network";
+  display: block; box-sizing: border-box; height: 266px; padding: 46px 34px;
+  white-space: pre-line; font: 600 clamp(17px, 1.8vw, 25px)/2 system-ui, sans-serif;
+  letter-spacing: .035em; color: var(--g-ink);
+  background-color: var(--g-panel); background-image: var(--season-art);
+  background-position: right center; background-size: cover; background-repeat: no-repeat;
+  border: 1px solid var(--g-line); border-radius: 24px;
+  box-shadow: 0 8px 24px #0000000c; margin: 0 0 24px;
+}
+:is(.page-index, .page-index\.lp) .main-sidebar,
+:is(.page-index, .page-index\.lp) .main-header .navbar,
+:is(.page-index, .page-index\.lp) .main-header .logo { background: var(--g-sidebar); color: #fff7ed; }
+:is(.page-index, .page-index\.lp) .main-header .navbar { border-bottom: 3px solid var(--g-accent); }
+:is(.page-index, .page-index\.lp) .sidebar-menu > li.header { background: transparent; color: #e2dce5; letter-spacing: .07em; }
+:is(.page-index, .page-index\.lp) .sidebar-menu > li > a { margin: 4px 10px; border-radius: 12px; color: #fff8ef; }
+:is(.page-index, .page-index\.lp) .sidebar-menu > li.active > a,
+:is(.page-index, .page-index\.lp) .sidebar-menu > li > a:hover { background: #ffffff18; color: #fff; border-left-color: var(--g-accent); }
+:is(.page-index, .page-index\.lp) .small-box { border-radius: 18px; box-shadow: 0 5px 14px #0000000b; }
+:is(.page-index, .page-index\.lp) .small-box p { font-weight: 600; }
+:is(.page-index, .page-index\.lp) .small-box h3 { font-family: system-ui,sans-serif; font-weight: 700; }
+:is(.page-index, .page-index\.lp) .small-box .icon { font-size: 54px; right: 14px; top: 14px; opacity: .12; }
+:is(.page-index, .page-index\.lp) .small-box > .small-box-footer { border-radius: 0 0 16px 16px; padding: 11px 14px; }
+:is(.page-index, .page-index\.lp) .small-box > .small-box-footer:hover { box-shadow: inset 0 -3px var(--card-accent); }
+:is(.page-index, .page-index\.lp) .box { border-radius: 18px; border-top: 3px solid var(--g-line); }
+:is(.page-index, .page-index\.lp) .box-header { padding: 17px 19px; }
+:is(.page-index, .page-index\.lp) .box-title { font-weight: 600; }
+:is(.page-index, .page-index\.lp) .btn-default { border-radius: 10px; border-bottom: 2px solid var(--g-accent); }
+:is(.page-index, .page-index\.lp) .btn-default:hover { outline: 1px solid var(--g-accent); }
+@media(max-width:1100px) {
+  :is(.page-index, .page-index\.lp) .content::before { font-size: 17px; padding: 28px; height: 310px; background-size: auto 200px; background-position: right bottom; background-color: var(--g-panel); }
+}
+@media(max-width:767px) {
+  :is(.page-index, .page-index\.lp) .content::before { height: 330px; padding: 18px; font-size: 15px; line-height: 1.8; border-radius: 16px; background-size: auto 210px; }
+  :is(.page-index, .page-index\.lp) .small-box .icon { display: block; }
+}
+@media(forced-colors:active) {
+  :is(.page-index, .page-index\.lp) .content::before { background: Canvas; color: CanvasText; border: 1px solid CanvasText; }
+}
